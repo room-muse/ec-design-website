@@ -1,8 +1,9 @@
 import nordicCatalogImage from 'figma:asset/b2bcfd473c78e0b613c49d368bae09322ddfbdb7.png';
 import catalogBrowseImage from 'figma:asset/0ed43e4dd98e3ba524b6c6ae77c0d233aa069a58.png';
 import floorPlanUploadedScreen from 'figma:asset/bb1c5a7c71e6354b3765279a0ccfc4f2af0e4ced.png';
-import productImage from 'figma:asset/4541c55b704c752fe831a7dc2efee132b1d39b3d.png';
-import sofaImage from 'figma:asset/87e295d54a8a507d1736a48d499a75171c31eb35.png';
+
+const productImage = 'https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/4541c55b704c752fe831a7dc2efee132b1d39b3d.png';
+const sofaImage = 'https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/87e295d54a8a507d1736a48d499a75171c31eb35.png';
 import inventoryGif from 'figma:asset/9eb474bcb37a08419246973b1550a8767ab3d898.png';
 import arPluginGif from 'figma:asset/384b4dceed8e0db577a15d3ded340dbdb122bd90.png';
 import { AnalyticsDashboard } from './AnalyticsDashboard';

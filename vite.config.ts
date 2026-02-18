@@ -36,10 +36,6 @@ export default defineConfig({
         __dirname,
         "./src/assets/95a363c49e89da6c03503e9c01a253adf48b2577.png",
       ),
-      "figma:asset/87e295d54a8a507d1736a48d499a75171c31eb35.png": path.resolve(
-        __dirname,
-        "./src/assets/87e295d54a8a507d1736a48d499a75171c31eb35.png",
-      ),
       "figma:asset/807591418c19cb0a900d3773136b75a500fb4557.png": path.resolve(
         __dirname,
         "./src/assets/807591418c19cb0a900d3773136b75a500fb4557.png",
@@ -47,10 +43,6 @@ export default defineConfig({
       "figma:asset/699bdcf8c3bd95b5fc88a48f24d741fa6316424b.png": path.resolve(
         __dirname,
         "./src/assets/699bdcf8c3bd95b5fc88a48f24d741fa6316424b.png",
-      ),
-      "figma:asset/4541c55b704c752fe831a7dc2efee132b1d39b3d.png": path.resolve(
-        __dirname,
-        "./src/assets/4541c55b704c752fe831a7dc2efee132b1d39b3d.png",
       ),
       "figma:asset/43901ceb0e7066b32dd06ffafe7bb1185568bf59.png": path.resolve(
         __dirname,

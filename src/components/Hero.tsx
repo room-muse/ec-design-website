@@ -1,8 +1,8 @@
 import { Button } from './ui/button';
-import newProductScreen from 'figma:asset/4541c55b704c752fe831a7dc2efee132b1d39b3d.png';
 import floorPlanScreen from 'figma:asset/bb1c5a7c71e6354b3765279a0ccfc4f2af0e4ced.png';
 import logoImage from 'figma:asset/43901ceb0e7066b32dd06ffafe7bb1185568bf59.png';
-import sofaImage from 'figma:asset/87e295d54a8a507d1736a48d499a75171c31eb35.png';
+
+const sofaImage = 'https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/87e295d54a8a507d1736a48d499a75171c31eb35.png';
 
 export function Hero() {
   return (
