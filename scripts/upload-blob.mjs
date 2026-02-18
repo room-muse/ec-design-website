@@ -24,6 +24,7 @@ async function main() {
     const { url } = await put(name, buffer, {
       access: "public",
       allowOverwrite: true,
+      contentType: "image/png",
     });
     console.log(name, "→", url);
   }
