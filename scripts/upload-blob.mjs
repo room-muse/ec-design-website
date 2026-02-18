@@ -21,7 +21,10 @@ async function main() {
   for (const name of files) {
     const filePath = path.join(assetsDir, name);
     const buffer = await readFile(filePath);
-    const { url } = await put(name, buffer, { access: "public" });
+    const { url } = await put(name, buffer, {
+      access: "public",
+      allowOverwrite: true,
+    });
     console.log(name, "→", url);
   }
 }
