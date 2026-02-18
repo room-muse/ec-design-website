@@ -3,8 +3,7 @@ import floorPlanScreen from "figma:asset/bb1c5a7c71e6354b3765279a0ccfc4f2af0e4ce
 import logoImage from "figma:asset/43901ceb0e7066b32dd06ffafe7bb1185568bf59.png";
 
 const sofaImage =
-  "https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/87e295d54a8a507d1736a48d499a75171c31eb35.png";
-
+  "https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/prodhack_3.gif";
 export function Hero() {
   return (
     <section className="relative bg-[#FFFFFF] overflow-hidden">
