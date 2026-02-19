@@ -68,6 +68,10 @@ export default defineConfig({
         __dirname,
         "./src/assets/0813bebd73e8d1c277a7a25f62f81f8dafbdd6a9.png",
       ),
+      "figma:asset/prodhack_main_1080.mp4": path.resolve(
+        __dirname,
+        "./src/assets/prodhack_main_1080.mp4",
+      ),
       "embla-carousel-react@8.6.0": "embla-carousel-react",
       "cmdk@1.1.1": "cmdk",
       "class-variance-authority@0.7.1": "class-variance-authority",
