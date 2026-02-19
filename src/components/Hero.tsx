@@ -2,8 +2,7 @@ import { Button } from "./ui/button";
 import floorPlanScreen from "figma:asset/bb1c5a7c71e6354b3765279a0ccfc4f2af0e4ced.png";
 import logoImage from "figma:asset/43901ceb0e7066b32dd06ffafe7bb1185568bf59.png";
 
-const sofaImage =
-  "https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/prodhack_3.gif";
+const videoSrc = "/asset/prodhack_main_1080.mp4";
 export function Hero() {
   return (
     <section className="relative bg-[#FFFFFF] overflow-hidden">
@@ -129,11 +128,15 @@ export function Hero() {
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#BF964B]/20 to-[#BF964B]/10 blur-3xl scale-110 rounded-[3rem]" />
 
-              {/* Sofa Image */}
-              <img
-                src={sofaImage}
-                alt="RoomMuse product showcase"
-                className="relative w-full max-w-[280px] drop-shadow-2xl rounded-3xl border-[8px] border-[#121212]"
+              {/* Video */}
+              <video
+                src={videoSrc}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="relative w-full max-w-[280px] drop-shadow-2xl rounded-3xl border-[8px] border-[#121212] object-cover"
+                aria-label="RoomMuse product showcase"
               />
 
               {/* Floating Badge */}

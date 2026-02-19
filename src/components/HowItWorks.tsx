@@ -2,10 +2,7 @@ import nordicCatalogImage from "figma:asset/b2bcfd473c78e0b613c49d368bae09322ddf
 import catalogBrowseImage from "figma:asset/0ed43e4dd98e3ba524b6c6ae77c0d233aa069a58.png";
 import floorPlanUploadedScreen from "figma:asset/bb1c5a7c71e6354b3765279a0ccfc4f2af0e4ced.png";
 
-const productImage =
-  "https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/prodhack_3.gif";
-const sofaImage =
-  "https://oqjbo0fegrwntnm9.public.blob.vercel-storage.com/prodhack_3.gif";
+const videoSrc = "/asset/prodhack_main_1080.mp4";
 import inventoryGif from "figma:asset/9eb474bcb37a08419246973b1550a8767ab3d898.png";
 import arPluginGif from "figma:asset/384b4dceed8e0db577a15d3ded340dbdb122bd90.png";
 import { AnalyticsDashboard } from "./AnalyticsDashboard";
@@ -56,11 +53,15 @@ function VideoPreview() {
           <div className="w-full h-full bg-gradient-radial from-[#BF964B]/30 to-[#BF964B]/20 blur-3xl scale-110 rounded-[3rem]" />
         </div>
 
-        {/* Sofa Product Image */}
-        <img
-          src={sofaImage}
-          alt="RoomMuse product showcase"
-          className="relative w-full max-w-[280px] drop-shadow-2xl rounded-3xl border-[8px] border-[#121212]"
+        {/* Video */}
+        <video
+          src={videoSrc}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="relative w-full max-w-[280px] drop-shadow-2xl rounded-3xl border-[8px] border-[#121212] object-cover"
+          aria-label="RoomMuse product showcase"
         />
       </div>
     </div>
