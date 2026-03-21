@@ -6,7 +6,7 @@ import { HowItWorks } from "./components/HowItWorks";
 import { Integration } from "./components/Integration";
 import { LeadForm } from "./components/LeadForm";
 import { Footer } from "./components/Footer";
-import Demo from "./pages/Demo";
+import DemoAR from "./pages/DemoAR";
 
 function Home() {
   return (
@@ -26,7 +26,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/demo" element={<Demo />} />
+        <Route path="/demo/ar" element={<DemoAR />} />
       </Routes>
     </BrowserRouter>
   );
