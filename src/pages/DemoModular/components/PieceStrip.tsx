@@ -18,6 +18,9 @@ export default function PieceStrip({
   ];
 
   const handleViewAR = async () => {
+    if (selectedPieces.length === 0) {
+      return;
+    }
     try {
       const payload = {
         pieces: selectedPieces.map((piece) => ({
