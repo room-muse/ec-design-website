@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Demo() {
+export default function DemoAR() {
   const params = new URLSearchParams(window.location.search);
   const company = params.get("company") || "";
   const arId = params.get("rm_arId") || "";

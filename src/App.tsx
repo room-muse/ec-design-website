@@ -7,6 +7,7 @@ import { Integration } from "./components/Integration";
 import { LeadForm } from "./components/LeadForm";
 import { Footer } from "./components/Footer";
 import DemoAR from "./pages/DemoAR";
+import DemoModular from "./pages/DemoModular";
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/demo/ar" element={<DemoAR />} />
+        <Route path="/demo/modular" element={<DemoModular />} />
       </Routes>
     </BrowserRouter>
   );
