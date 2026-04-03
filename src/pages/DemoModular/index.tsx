@@ -9,13 +9,17 @@ export default function DemoModular() {
   const [pieces, setPieces] = React.useState<Piece[]>([]);
   const [totalPrice, setTotalPrice] = React.useState(0);
 
+  const handleAddPiece = (piece: Piece) => {
+    setPieces((prev) => [...prev, piece]);
+  };
+
   return (
     <div className={styles.page}>
       <TopBar pieceCount={pieces.length} totalPrice={totalPrice} />
       <div className={styles.canvasArea}>
-        <Canvas />
+        <Canvas pieces={pieces} />
       </div>
-      <PieceStrip />
+      <PieceStrip onPieceClick={handleAddPiece} />
     </div>
   );
 }

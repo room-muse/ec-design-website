@@ -2,7 +2,11 @@ import React from "react";
 import { Piece } from "../../../types/piece";
 import styles from "./PieceStrip.module.css";
 
-export default function PieceStrip() {
+interface PieceStripProps {
+  onPieceClick: (piece: Piece) => void;
+}
+
+export default function PieceStrip({ onPieceClick }: PieceStripProps) {
   const PIECES: Piece[] = [
     { name: "Left Arm" },
     { name: "Middle" },
@@ -17,7 +21,7 @@ export default function PieceStrip() {
         {PIECES.map((piece, index) => (
           <button
             key={index}
-            onClick={() => console.log(piece)}
+            onClick={() => onPieceClick(piece)}
             className={styles.pieceButton}
           >
             {piece.name}
