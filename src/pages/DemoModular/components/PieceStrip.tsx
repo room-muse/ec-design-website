@@ -57,7 +57,9 @@ export default function PieceStrip({
       }
 
       if (quickLookLinkRef.current) {
-        quickLookLinkRef.current.setAttribute("href", data.usdzUrl);
+        const baseUrl = data.usdzUrl.split("#")[0];
+        const quickLookUrl = `${baseUrl}#allowsContentScaling=0`;
+        quickLookLinkRef.current.setAttribute("href", quickLookUrl);
         quickLookLinkRef.current.click();
       }
     } catch (error) {
