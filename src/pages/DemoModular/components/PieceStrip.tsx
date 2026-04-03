@@ -12,6 +12,7 @@ export default function PieceStrip({
   selectedPieces,
 }: PieceStripProps) {
   const [isLoading, setIsLoading] = React.useState(false);
+  const quickLookLinkRef = React.useRef<HTMLAnchorElement | null>(null);
 
   const PIECES: Piece[] = [
     { id: 1, name: "Left Arm" },
@@ -50,6 +51,15 @@ export default function PieceStrip({
 
       const data = await response.json();
       console.log("AR payload response:", data);
+
+      if (!data.usdzUrl) {
+        throw new Error("No usdzUrl returned from backend");
+      }
+
+      if (quickLookLinkRef.current) {
+        quickLookLinkRef.current.setAttribute("href", data.usdzUrl);
+        quickLookLinkRef.current.click();
+      }
     } catch (error) {
       console.error("Failed to send AR payload:", error);
     } finally {
@@ -88,6 +98,18 @@ export default function PieceStrip({
             "View in AR"
           )}
         </button>
+
+        <a
+          ref={quickLookLinkRef}
+          rel="ar"
+          href=""
+          className={styles.quickLookLink}
+        >
+          <img
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            alt=""
+          />
+        </a>
       </div>
     </div>
   );
