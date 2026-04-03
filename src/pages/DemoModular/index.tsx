@@ -1,8 +1,8 @@
 import React from "react";
 import TopBar from "./components/TopBar";
 import Canvas from "./components/Canvas";
-import ColorPicker from "./components/ColorPicker";
 import PieceStrip from "./components/PieceStrip";
+import styles from "./DemoModular.module.css";
 import { Piece } from "../../types/piece";
 
 export default function DemoModular() {
@@ -10,9 +10,9 @@ export default function DemoModular() {
   const [totalPrice, setTotalPrice] = React.useState(0);
 
   return (
-    <div className="flex h-screen flex-col ">
+    <div className={styles.page}>
       <TopBar pieceCount={pieces.length} totalPrice={totalPrice} />
-      <div className="flex flex-1 min-h-0">
+      <div className={styles.canvasArea}>
         <Canvas />
       </div>
       <PieceStrip />

@@ -1,0 +1,10 @@
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.canvasArea {
+  flex: 1;
+  min-height: 0;
+}

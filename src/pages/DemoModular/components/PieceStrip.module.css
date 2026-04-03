@@ -1,0 +1,35 @@
+.strip {
+  height: 96px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.scrollRow {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pieceButton {
+  min-width: 90px;
+  flex-shrink: 0;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-align: center;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pieceButton:hover {
+  background: #e5e7eb;
+}

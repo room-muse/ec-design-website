@@ -1,5 +1,6 @@
 import React from "react";
 import { Piece } from "../../../types/piece";
+import styles from "./PieceStrip.module.css";
 
 export default function PieceStrip() {
   const PIECES: Piece[] = [
@@ -11,13 +12,13 @@ export default function PieceStrip() {
   ];
 
   return (
-    <div className="h-24 border-t bg-white">
-      <div className="flex gap-3 overflow-x-auto px-4 py-3">
+    <div className={styles.strip}>
+      <div className={styles.scrollRow}>
         {PIECES.map((piece, index) => (
           <button
             key={index}
             onClick={() => console.log(piece)}
-            className="min-w-[90px] flex-shrink-0 bg-gray-100 rounded-lg px-3 py-2 text-sm text-center"
+            className={styles.pieceButton}
           >
             {piece.name}
           </button>
