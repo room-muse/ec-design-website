@@ -25,7 +25,7 @@ export default function PieceStrip({
         })),
       };
 
-      const response = await fetch("http://localhost:8000/assemble-modular", {
+      const response = await fetch("ar-backend-563656133641.us-central1.run.app/assemble-modular", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
