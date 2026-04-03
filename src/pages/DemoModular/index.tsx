@@ -14,7 +14,6 @@ export default function DemoModular() {
       <div className="flex-1 min-h-0">
         <Canvas />
       </div>
-      <ColorPicker />
       <PieceStrip />
     </div>
   );
