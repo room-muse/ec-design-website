@@ -12,7 +12,7 @@ export default function Canvas({ pieces }: CanvasProps) {
       <div className={styles.canvas}>
         <div className={styles.emptyState}>
           <p className={styles.title}>Start building your sectional</p>
-          <p className={styles.subtitle}>Select a piece from the strip below</p>
+          <p className={styles.subtitle}>Select a piece from the panel below</p>
         </div>
       </div>
     );

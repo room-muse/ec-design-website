@@ -17,16 +17,22 @@ export default function PieceStrip({ onPieceClick }: PieceStripProps) {
 
   return (
     <div className={styles.strip}>
-      <div className={styles.scrollRow}>
-        {PIECES.map((piece, index) => (
-          <button
-            key={index}
-            onClick={() => onPieceClick(piece)}
-            className={styles.pieceButton}
-          >
-            {piece.name}
-          </button>
-        ))}
+      <div className={styles.piecesArea}>
+        <div className={styles.scrollRow}>
+          {PIECES.map((piece, index) => (
+            <button
+              key={index}
+              onClick={() => onPieceClick(piece)}
+              className={styles.pieceButton}
+            >
+              {piece.name}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.actionArea}>
+        <button className={styles.arButton}>View in AR</button>
       </div>
     </div>
   );

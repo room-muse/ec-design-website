@@ -8,6 +8,12 @@
   overflow: hidden;
 }
 
+.piecesArea {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
 .scrollRow {
   display: flex;
   gap: 12px;
@@ -34,4 +40,30 @@
 
 .pieceButton:hover {
   background: #e5e7eb;
+}
+
+.actionArea {
+  flex-shrink: 0;
+  padding: 0 16px 0 8px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #e5e7eb;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.arButton {
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.arButton:hover {
+  background: #1f2937;
 }
