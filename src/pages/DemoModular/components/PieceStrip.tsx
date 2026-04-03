@@ -11,6 +11,8 @@ export default function PieceStrip({
   onPieceClick,
   selectedPieces,
 }: PieceStripProps) {
+  const [isLoading, setIsLoading] = React.useState(false);
+
   const PIECES: Piece[] = [
     { id: 1, name: "Left Arm" },
     { id: 2, name: "Middle" },
@@ -18,9 +20,12 @@ export default function PieceStrip({
   ];
 
   const handleViewAR = async () => {
-    if (selectedPieces.length === 0) {
+    if (selectedPieces.length === 0 || isLoading) {
       return;
     }
+
+    setIsLoading(true);
+
     try {
       const payload = {
         pieces: selectedPieces.map((piece) => ({
@@ -47,6 +52,8 @@ export default function PieceStrip({
       console.log("AR payload response:", data);
     } catch (error) {
       console.error("Failed to send AR payload:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -67,8 +74,19 @@ export default function PieceStrip({
       </div>
 
       <div className={styles.actionArea}>
-        <button className={styles.arButton} onClick={handleViewAR}>
-          View in AR
+        <button
+          className={styles.arButton}
+          onClick={handleViewAR}
+          disabled={isLoading || selectedPieces.length === 0}
+        >
+          {isLoading ? (
+            <>
+              <span className={styles.spinner} />
+              <span>Preparing...</span>
+            </>
+          ) : (
+            "View in AR"
+          )}
         </button>
       </div>
     </div>
