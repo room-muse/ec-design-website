@@ -25,13 +25,16 @@ export default function PieceStrip({
         })),
       };
 
-      const response = await fetch("ar-backend-563656133641.us-central1.run.app/assemble-modular", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        "https://ar-backend-563656133641.us-central1.run.app/assemble-modular",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Request failed: ${response.status}`);
