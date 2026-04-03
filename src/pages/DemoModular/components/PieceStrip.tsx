@@ -4,9 +4,13 @@ import styles from "./PieceStrip.module.css";
 
 interface PieceStripProps {
   onPieceClick: (piece: Piece) => void;
+  selectedPieces: Piece[];
 }
 
-export default function PieceStrip({ onPieceClick }: PieceStripProps) {
+export default function PieceStrip({
+  onPieceClick,
+  selectedPieces,
+}: PieceStripProps) {
   const PIECES: Piece[] = [
     { id: 1, name: "Left Arm" },
     { id: 2, name: "Middle" },
@@ -15,18 +19,18 @@ export default function PieceStrip({ onPieceClick }: PieceStripProps) {
 
   const handleViewAR = async () => {
     try {
+      const payload = {
+        pieces: selectedPieces.map((piece) => ({
+          pieceId: piece.id,
+        })),
+      };
+
       const response = await fetch("http://localhost:8000/assemble-modular", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          pieces: [
-            { pieceId: 1 },
-            { pieceId: 2 },
-            { pieceId: 3 },
-          ],
-        }),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
@@ -44,9 +48,9 @@ export default function PieceStrip({ onPieceClick }: PieceStripProps) {
     <div className={styles.strip}>
       <div className={styles.piecesArea}>
         <div className={styles.scrollRow}>
-          {PIECES.map((piece, index) => (
+          {PIECES.map((piece) => (
             <button
-              key={index}
+              key={piece.id}
               onClick={() => onPieceClick(piece)}
               className={styles.pieceButton}
             >

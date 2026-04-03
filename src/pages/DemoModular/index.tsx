@@ -19,7 +19,7 @@ export default function DemoModular() {
       <div className={styles.canvasArea}>
         <Canvas pieces={pieces} />
       </div>
-      <PieceStrip onPieceClick={handleAddPiece} />
+      <PieceStrip onPieceClick={handleAddPiece} selectedPieces={pieces} />
     </div>
   );
 }
