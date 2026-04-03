@@ -1,7 +1,7 @@
 
-  # B2B Furniture Brand Landing Page
+  # RoomMuse
 
-  This is a code bundle for B2B Furniture Brand Landing Page. The original project is available at https://www.figma.com/design/myUTA9W6ocOZHu7eqvpM6L/B2B-Furniture-Brand-Landing-Page.
+  This is a code bundle for RoomMuse. The original project is available at https://www.figma.com/design/myUTA9W6ocOZHu7eqvpM6L/RoomMuse.
 
   ## Running the code
 

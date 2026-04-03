@@ -6,7 +6,7 @@ export function Analytics() {
     <section id="analytics" className="relative bg-[#FAFAFA] py-40">
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#BF964B] rounded-full text-sm text-white font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#bcab87] rounded-full text-sm text-white font-medium mb-6">
             <Sparkles className="w-4 h-4" />
             Real-time Analytics
           </div>
@@ -21,7 +21,7 @@ export function Analytics() {
         {/* Dashboard Card with Glass Effect */}
         <div className="relative max-w-[1200px] mx-auto">
           {/* Glass Container */}
-          <div className="relative bg-[#FFFFFF] rounded-lg border border-[#BF964B] shadow-[0_8px_20px_rgba(10,10,10,0.06)] overflow-hidden">
+          <div className="relative bg-[#FFFFFF] rounded-lg border border-[#bcab87] shadow-[0_8px_20px_rgba(10,10,10,0.06)] overflow-hidden">
             {/* Header */}
             <div className="bg-[#FFFFFF] border-b border-[#E6E6E6] px-8 py-6">
               <div className="flex items-center justify-between">
@@ -174,7 +174,7 @@ export function Analytics() {
                           <td className="text-sm text-[#121212] font-medium py-4 pr-4">{product.name}</td>
                           <td className="text-sm text-[#121212] text-right py-4 px-4">{product.clicks}</td>
                           <td className="text-sm text-[#121212] text-right py-4 px-4">{product.placements}</td>
-                          <td className="text-sm text-[#BF964B] font-medium text-right py-4 px-4">{product.placementRate}</td>
+                          <td className="text-sm text-[#bcab87] font-medium text-right py-4 px-4">{product.placementRate}</td>
                           <td className="text-sm text-[#121212] text-right py-4 px-4">{product.addToCart}</td>
                           <td className="text-sm text-[#6F746B] text-right py-4 pl-4">{product.atcRate}</td>
                         </tr>

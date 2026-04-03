@@ -5,7 +5,9 @@ import adityaPhoto from 'figma:asset/0813bebd73e8d1c277a7a25f62f81f8dafbdd6a9.pn
 import chiungChenPhoto from 'figma:asset/431ccf0e96957ca3dcb4f9912f2ae9a9d83e6583.png';
 import angelaPhoto from 'figma:asset/699bdcf8c3bd95b5fc88a48f24d741fa6316424b.png';
 import sushrutPhoto from 'figma:asset/807591418c19cb0a900d3773136b75a500fb4557.png';
+import jamieChungPhoto from 'figma:asset/92021697531bca78fe49ea3a6c62167069721e8e.png';
 import { ExternalLink } from 'lucide-react';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function About() {
   const softwareDevelopmentTeam = [
@@ -35,9 +37,17 @@ export function About() {
     },
   ];
 
+  const designTeam = [
+    { 
+      name: 'Jamie Chung', 
+      role: 'Design Lead', 
+      photo: jamieChungPhoto,
+      bio: 'Creative design professional specializing in user experience and visual design.'
+    },
+  ];
+
   const teams = [
     { name: 'Marketing Team', count: 3 },
-    { name: 'Design Team', count: 1 },
   ];
 
   return (
@@ -55,7 +65,7 @@ export function About() {
           {/* Description */}
           <p className="text-xl text-[#121212] leading-[1.6] text-center mb-12 font-medium">
             Backed by Carnegie Mellon University's Swartz Center for Entrepreneurship, 
-            <span className="text-[#BF964B]"> RoomMuse</span> bridges the gap between creativity, technology, 
+            <span className="text-[#bcab87]"> RoomMuse</span> bridges the gap between creativity, technology, 
             and commerce to make design accessible to everyone.
           </p>
 
@@ -108,17 +118,17 @@ export function About() {
                 />
               </div>
               <h4 className="text-xl text-[#121212] font-semibold mb-1">Evelyn Chen</h4>
-              <p className="text-sm text-[#BF964B] font-medium mb-6">Founder & CEO</p>
+              <p className="text-sm text-[#bcab87] font-medium mb-6">Founder & CEO</p>
               
               {/* Info Box */}
               <div className="max-w-[700px] w-full bg-[#FFFFFF] rounded-2xl p-6 border border-[#E5E2DB]">
                 <ul className="text-sm text-[#6F746B] leading-relaxed space-y-3">
                   <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#BF964B] mt-2 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#bcab87] mt-2 flex-shrink-0" />
                     <span>MBA candidate at Carnegie Mellon University's Tepper School of Business</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#BF964B] mt-2 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#bcab87] mt-2 flex-shrink-0" />
                     <span>Finance & analytics background with Wall Street experience at UBS, HSBC, and LSEG and early-stage startup fundraising in fintech and healthcare</span>
                   </li>
                 </ul>
@@ -142,7 +152,7 @@ export function About() {
                         />
                       </div>
                       <h4 className="text-lg text-[#121212] font-semibold mb-1">{member.name}</h4>
-                      <p className="text-sm text-[#BF964B] font-medium mb-4">{member.role}</p>
+                      <p className="text-sm text-[#bcab87] font-medium mb-4">{member.role}</p>
                       <p className="text-sm text-[#6F746B] leading-relaxed">{member.bio}</p>
                     </div>
                   );
@@ -150,11 +160,28 @@ export function About() {
               </div>
             </div>
 
-            {/* Teams - Simple List */}
+            {/* Design Team & Marketing Team Combined */}
             <div className="max-w-[900px] mx-auto grid grid-cols-2 gap-6">
+              {/* Jamie Chung */}
+              {designTeam.map((member, idx) => (
+                <div key={idx} className="bg-[#FFFFFF] rounded-xl p-6 border border-[#E5E2DB] flex flex-col items-center text-center">
+                  <div className="w-28 h-28 rounded-full overflow-hidden mb-4 bg-[#F5F2EC]">
+                    <img 
+                      src={member.photo} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-lg text-[#121212] font-semibold mb-1">{member.name}</h4>
+                  <p className="text-sm text-[#bcab87] font-medium mb-4">{member.role}</p>
+                  <p className="text-sm text-[#6F746B] leading-relaxed">{member.bio}</p>
+                </div>
+              ))}
+              
+              {/* Marketing Team */}
               {teams.map((team, idx) => (
                 <div key={idx} className="bg-[#FFFFFF] rounded-xl p-8 border border-[#E5E2DB] flex flex-col items-center text-center">
-                  <div className="text-5xl text-[#BF964B] font-bold mb-4">{team.count}</div>
+                  <div className="text-5xl text-[#bcab87] font-bold mb-4">{team.count}</div>
                   <h4 className="text-base text-[#121212] font-semibold leading-tight">{team.name}</h4>
                 </div>
               ))}
