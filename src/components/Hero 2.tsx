@@ -1,5 +1,5 @@
 import { Button } from './ui/button';
-import prodHackVideo from '../assets/prodhack_main_1080.mp4';
+import sofaImage from 'figma:asset/b2bcfd473c78e0b613c49d368bae09322ddfbdb7.png';
 import logoImage from 'figma:asset/0407eb1a8e9dd254e50314856a23a7633b709410.png';
 
 export function Hero() {
@@ -89,13 +89,11 @@ export function Hero() {
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#bcab87]/20 to-[#bcab87]/10 blur-3xl scale-110 rounded-[3rem]" />
               
-              <video
-                src={prodHackVideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="relative w-full max-w-[280px] drop-shadow-2xl rounded-3xl border-[8px] border-[#121212] object-cover"
+              {/* Sofa Image */}
+              <img 
+                src={sofaImage} 
+                alt="RoomMuse product showcase" 
+                className="relative w-full max-w-[280px] drop-shadow-2xl rounded-3xl border-[8px] border-[#121212]"
               />
 
               {/* Floating Badge */}

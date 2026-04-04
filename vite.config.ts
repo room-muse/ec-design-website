@@ -43,7 +43,7 @@ export default defineConfig({
       ),
       "figma:asset/87e295d54a8a507d1736a48d499a75171c31eb35.png": path.resolve(
         __dirname,
-        "./src/assets/87e295d54a8a507d1736a48d499a75171c31eb35.png",
+        "./src/assets/prodhack_main_1080.mp4",
       ),
       "figma:asset/807591418c19cb0a900d3773136b75a500fb4557.png": path.resolve(
         __dirname,
@@ -55,7 +55,7 @@ export default defineConfig({
       ),
       "figma:asset/4541c55b704c752fe831a7dc2efee132b1d39b3d.png": path.resolve(
         __dirname,
-        "./src/assets/4541c55b704c752fe831a7dc2efee132b1d39b3d.png",
+        "./src/assets/prodhack_main_1080.mp4",
       ),
       "figma:asset/431ccf0e96957ca3dcb4f9912f2ae9a9d83e6583.png": path.resolve(
         __dirname,
