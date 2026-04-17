@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import floorPlanScreen from "figma:asset/bb1c5a7c71e6354b3765279a0ccfc4f2af0e4ced.png";
-import logoImage from "figma:asset/43901ceb0e7066b32dd06ffafe7bb1185568bf59.png";
+import logoImage from "../assets/logo.svg";
 import videoSrc from "figma:asset/prodhack_main_1080.mp4";
 export function Hero() {
   return (
@@ -8,7 +8,7 @@ export function Hero() {
       {/* Navigation */}
       <nav className="relative border-b border-[#E6E6E6] bg-white/80 backdrop-blur-md">
         <div className="max-w-[1400px] mx-auto px-8 py-5 flex items-center justify-between">
-          <img src={logoImage} alt="RoomMuse" className="h-5" />
+          <img src={logoImage} alt="RoomMuse" className="h-6" />
           <div className="flex items-center gap-8">
             <a
               href="#how-it-works"
@@ -30,7 +30,7 @@ export function Hero() {
                   .getElementById("lead-form")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="bg-white text-[#0A0A0A] hover:bg-[#FAFAFA] border border-[#BF964B] rounded px-6 h-10 shadow-lg shadow-black/5 transition-all font-medium"
+              className="bg-white text-[#0A0A0A] hover:bg-[#FAFAFA] border border-[#BCAB87] rounded px-6 h-10 shadow-lg shadow-black/5 transition-all font-medium"
             >
               Contact Sales
             </Button>
@@ -44,7 +44,7 @@ export function Hero() {
           {/* Left: Content */}
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#E6E6E6] bg-white/60 backdrop-blur-sm rounded-full text-sm text-[#6F746B] mb-8">
-              <div className="w-2 h-2 rounded-full bg-[#BF964B] animate-pulse" />
+              <div className="w-2 h-2 rounded-full bg-[#BCAB87] animate-pulse" />
               For Furniture Brands & Retailers
             </div>
             <h1
@@ -66,7 +66,7 @@ export function Hero() {
                     .getElementById("lead-form")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="bg-[#BF964B] text-white hover:bg-[#A67F3D] rounded px-8 h-12 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/15 transition-all"
+                className="bg-[#BCAB87] text-white hover:bg-[#A67F3D] rounded px-8 h-12 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/15 transition-all"
               >
                 Get in Touch
               </Button>
@@ -125,7 +125,7 @@ export function Hero() {
             {/* Background Layer - Sofa Product Image with Glow */}
             <div className="relative">
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#BF964B]/20 to-[#BF964B]/10 blur-3xl scale-110 rounded-[3rem]" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#BCAB87]/20 to-[#BCAB87]/10 blur-3xl scale-110 rounded-[3rem]" />
 
               {/* Video */}
               <video
@@ -141,7 +141,7 @@ export function Hero() {
               {/* Floating Badge */}
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-[#0A0A0A] px-6 py-3 rounded-full shadow-xl border border-[#0A0A0A]/20 whitespace-nowrap">
                 <div className="text-sm text-white font-semibold">
-                  ✨ AI-Powered Room Design
+                  ✨ Visualize Your Room in AR
                 </div>
               </div>
             </div>

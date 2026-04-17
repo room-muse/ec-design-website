@@ -19,7 +19,7 @@ export function Integration() {
                 key={index}
                 className="bg-[#FFFFFF] rounded-lg p-6 border border-[#E6E6E6] hover:border-[#2D4A3E]/30 shadow-[0_8px_20px_rgba(10,10,10,0.06)] hover:shadow-[0_12px_28px_rgba(10,10,10,0.10)] transition-all group"
               >
-                <div className="w-12 h-12 rounded-lg bg-[#BF964B] border border-[#BF964B] shadow-[0_4px_12px_rgba(191,150,75,0.2)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-[#BCAB87] border border-[#BCAB87] shadow-[0_4px_12px_rgba(188,171,135,0.2)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg text-[#0A0A0A] font-medium mb-2">

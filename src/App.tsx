@@ -5,6 +5,7 @@ import { Value } from "./components/Value";
 import { HowItWorks } from "./components/HowItWorks";
 import { Integration } from "./components/Integration";
 import { LeadForm } from "./components/LeadForm";
+// import { About } from "./components/About";
 import { Footer } from "./components/Footer";
 import DemoAR from "./pages/DemoAR";
 import DemoModular from "./pages/DemoModular";
@@ -17,6 +18,7 @@ function Home() {
       <HowItWorks />
       <Integration />
       <LeadForm />
+      {/* <About /> */}
       <Footer />
     </div>
   );

@@ -9,9 +9,9 @@ export function DashboardPreview() {
               <div className="text-xs text-[#6F746B] mb-1">Analytics Dashboard</div>
               <div className="text-lg text-[#121212] font-medium">Performance Overview</div>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-[#BF964B]/10 rounded-lg border border-[#BF964B]/20">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#BF964B] animate-pulse" />
-              <span className="text-xs text-[#BF964B] font-medium">Live</span>
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-[#BCAB87]/10 rounded-lg border border-[#BCAB87]/20">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#BCAB87] animate-pulse" />
+              <span className="text-xs text-[#BCAB87] font-medium">Live</span>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ export function DashboardPreview() {
                   </div>
                   <div className="h-2 bg-[#F5F2EC] rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-[#BF964B] rounded-full"
+                      className="h-full bg-[#BCAB87] rounded-full"
                       style={{ width: item.width }}
                     />
                   </div>

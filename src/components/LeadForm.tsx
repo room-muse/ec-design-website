@@ -9,7 +9,7 @@ export function LeadForm() {
         <div className="max-w-[700px] mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#BF964B] border border-[#BF964B] shadow-[0_4px_12px_rgba(191,150,75,0.2)] rounded-full text-sm text-white font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#BCAB87] border border-[#BCAB87] shadow-[0_4px_12px_rgba(188,171,135,0.2)] rounded-full text-sm text-white font-medium mb-6">
               <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
               Let's get started
             </div>
@@ -53,7 +53,7 @@ export function LeadForm() {
                       id="name"
                       name="name"
                       placeholder="Your name"
-                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BF964B] focus:ring-2 focus:ring-[#BF964B]/20 transition-all"
+                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BCAB87] focus:ring-2 focus:ring-[#BCAB87]/20 transition-all"
                     />
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export function LeadForm() {
                       name="email"
                       type="email"
                       placeholder="you@company.com"
-                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BF964B] focus:ring-2 focus:ring-[#BF964B]/20 transition-all"
+                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BCAB87] focus:ring-2 focus:ring-[#BCAB87]/20 transition-all"
                     />
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export function LeadForm() {
                       id="company"
                       name="company"
                       placeholder="Your Company Name"
-                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BF964B] focus:ring-2 focus:ring-[#BF964B]/20 transition-all"
+                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BCAB87] focus:ring-2 focus:ring-[#BCAB87]/20 transition-all"
                     />
                   </div>
                 </div>
@@ -108,14 +108,14 @@ export function LeadForm() {
                       id="website"
                       name="website"
                       placeholder="www.yourcompany.com"
-                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BF964B] focus:ring-2 focus:ring-[#BF964B]/20 transition-all"
+                      className="bg-white border-[#E5E2DB] rounded-lg h-12 pl-12 focus:border-[#BCAB87] focus:ring-2 focus:ring-[#BCAB87]/20 transition-all"
                     />
                   </div>
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#BF964B] text-white hover:bg-[#A67F3D] rounded h-12 shadow-lg shadow-[#BF964B]/20 hover:shadow-xl hover:shadow-[#BF964B]/30 transition-all font-medium"
+                  className="w-full bg-[#BCAB87] text-white hover:bg-[#A67F3D] rounded h-12 shadow-lg shadow-[#BCAB87]/20 hover:shadow-xl hover:shadow-[#BCAB87]/30 transition-all font-medium"
                 >
                   Contact Sales
                 </Button>
@@ -126,7 +126,7 @@ export function LeadForm() {
             <div className="bg-gradient-to-r from-[#FAF8F3] to-transparent px-8 py-5 border-t border-[#E5E2DB]">
               <div className="flex items-center justify-center gap-2 text-sm text-[#6F746B]">
                 <svg
-                  className="w-5 h-5 text-[#BF964B]"
+                  className="w-5 h-5 text-[#BCAB87]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

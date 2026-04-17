@@ -49,7 +49,7 @@ function VideoPreview() {
       <div className="relative">
         {/* Background Glow */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-full h-full bg-gradient-radial from-[#BF964B]/30 to-[#BF964B]/20 blur-3xl scale-110 rounded-[3rem]" />
+          <div className="w-full h-full bg-gradient-radial from-[#BCAB87]/30 to-[#BCAB87]/20 blur-3xl scale-110 rounded-[3rem]" />
         </div>
 
         {/* Video */}
@@ -97,7 +97,7 @@ export function HowItWorks() {
               {/* Content */}
               <div className={`${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
                 <div className="inline-flex items-center gap-3 mb-6">
-                  <div className="w-14 h-14 rounded-lg bg-[#BF964B] flex items-center justify-center shadow-lg shadow-[#BF964B]/30">
+                  <div className="w-14 h-14 rounded-lg bg-[#BCAB87] flex items-center justify-center shadow-lg shadow-[#BCAB87]/30">
                     <span className="text-xl text-white font-medium">
                       {step.number}
                     </span>
@@ -133,7 +133,7 @@ export function HowItWorks() {
                   <div className="relative w-full flex justify-center">
                     {/* Background Glow */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-full h-full bg-gradient-radial from-[#BF964B]/30 to-[#BF964B]/20 blur-3xl scale-110 rounded-[3rem]" />
+                      <div className="w-full h-full bg-gradient-radial from-[#BCAB87]/30 to-[#BCAB87]/20 blur-3xl scale-110 rounded-[3rem]" />
                     </div>
 
                     {/* Image with Border - Larger and object-cover to crop margins */}
@@ -150,7 +150,7 @@ export function HowItWorks() {
                   <div className="relative w-full flex justify-center">
                     {/* Background Glow */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2">
-                      <div className="w-[400px] h-[400px] bg-gradient-radial from-[#BF964B]/20 via-[#BF964B]/5 to-transparent rounded-full blur-2xl" />
+                      <div className="w-[400px] h-[400px] bg-gradient-radial from-[#BCAB87]/20 via-[#BCAB87]/5 to-transparent rounded-full blur-2xl" />
                     </div>
                     <div className="relative w-full max-w-[850px]">
                       <AnalyticsDashboard />
@@ -162,7 +162,7 @@ export function HowItWorks() {
                   <div className="relative w-full flex items-start justify-center">
                     {/* Background Glow */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2">
-                      <div className="w-[500px] h-[500px] bg-gradient-radial from-[#BF964B]/20 via-[#BF964B]/5 to-transparent rounded-full blur-2xl" />
+                      <div className="w-[500px] h-[500px] bg-gradient-radial from-[#BCAB87]/20 via-[#BCAB87]/5 to-transparent rounded-full blur-2xl" />
                     </div>
                     <VideoPreview />
                   </div>
