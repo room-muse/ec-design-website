@@ -59,7 +59,7 @@ export function AnalyticsDashboard() {
               <h3 className="text-base text-[#121212] font-medium mb-4">Top room styles</h3>
               <div className="space-y-3">
                 {[
-                  { name: 'Modern Minimalist', engagement: 92, color: 'bg-[#BF964B]' },
+                  { name: 'Modern Minimalist', engagement: 92, color: 'bg-[#BCAB87]' },
                   { name: 'Scandinavian Cozy', engagement: 85, color: 'bg-[#CCA55C]' },
                   { name: 'Industrial Loft', engagement: 78, color: 'bg-[#D9B46D]' },
                   { name: 'Mid-Century Modern', engagement: 71, color: 'bg-[#E6C37E]' },
