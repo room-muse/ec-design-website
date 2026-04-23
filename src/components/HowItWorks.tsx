@@ -70,7 +70,7 @@ function VideoPreview() {
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="relative bg-[#FFFFFF] py-40">
-      <div className="relative max-w-[1400px] mx-auto px-8">
+      <div className="relative max-w-[1400px] mx-auto px-4 sm:px-8">
         <div className="text-center mb-16">
           <h2
             className="text-5xl text-[#0A0A0A] mb-4 leading-[1.15]"
@@ -150,7 +150,7 @@ export function HowItWorks() {
                   <div className="relative w-full flex justify-center">
                     {/* Background Glow */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2">
-                      <div className="w-[400px] h-[400px] bg-gradient-radial from-[#BCAB87]/20 via-[#BCAB87]/5 to-transparent rounded-full blur-2xl" />
+                      <div className="w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-gradient-radial from-[#BCAB87]/20 via-[#BCAB87]/5 to-transparent rounded-full blur-2xl" />
                     </div>
                     <div className="relative w-full max-w-[850px]">
                       <AnalyticsDashboard />
@@ -162,7 +162,7 @@ export function HowItWorks() {
                   <div className="relative w-full flex items-start justify-center">
                     {/* Background Glow */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2">
-                      <div className="w-[500px] h-[500px] bg-gradient-radial from-[#BCAB87]/20 via-[#BCAB87]/5 to-transparent rounded-full blur-2xl" />
+                      <div className="w-[200px] h-[200px] sm:w-[500px] sm:h-[500px] bg-gradient-radial from-[#BCAB87]/20 via-[#BCAB87]/5 to-transparent rounded-full blur-2xl" />
                     </div>
                     <VideoPreview />
                   </div>

@@ -3,7 +3,7 @@ import { Upload, Link2, Image, Boxes } from 'lucide-react';
 export function Integration() {
   return (
     <section id="integration" className="relative bg-[#F5F5F5] py-40">
-      <div className="max-w-[1400px] mx-auto px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8">
         <div className="text-center mb-12">
           <h2 className="text-5xl text-[#0A0A0A] mb-4 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)', fontWeight: 500, letterSpacing: '-0.02em' }}>
             Simple integration

@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="bg-[#121212] text-[#B9B2A8]">
-      <div className="max-w-[1400px] mx-auto px-8 py-14">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 py-14">
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="text-2xl text-white mb-4 tracking-tight" style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}>RoomMuse</div>
