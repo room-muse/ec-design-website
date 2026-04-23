@@ -12,7 +12,7 @@ import DemoModular from "./pages/DemoModular";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-[#FAF8F3]">
+    <div className="min-h-screen bg-[#FAF8F3] overflow-x-hidden">
       <Hero />
       <Value />
       <HowItWorks />

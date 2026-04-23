@@ -4,22 +4,22 @@ import logoImage from "../assets/logo.svg";
 import videoSrc from "figma:asset/prodhack_main_1080.mp4";
 export function Hero() {
   return (
-    <section className="relative bg-[#FFFFFF] overflow-hidden">
+    <section className="relative bg-[#FFFFFF] overflow-x-hidden">
       {/* Navigation */}
       <nav className="relative border-b border-[#E6E6E6] bg-white/80 backdrop-blur-md">
-        <div className="max-w-[1400px] mx-auto px-8 py-5 flex items-center justify-between">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-8 py-5 flex items-center justify-between">
           <img src={logoImage} alt="RoomMuse" className="h-6" />
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 sm:gap-8">
             <a
               href="#how-it-works"
-              className="text-[#0A0A0A] hover:text-[#2D4A3E] transition-colors text-sm font-medium relative group"
+              className="hidden sm:block text-[#0A0A0A] hover:text-[#2D4A3E] transition-colors text-sm font-medium relative group"
             >
               How it works
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2D4A3E] group-hover:w-full transition-all" />
             </a>
             <a
               href="#integration"
-              className="text-[#0A0A0A] hover:text-[#2D4A3E] transition-colors text-sm font-medium relative group"
+              className="hidden sm:block text-[#0A0A0A] hover:text-[#2D4A3E] transition-colors text-sm font-medium relative group"
             >
               Integration
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2D4A3E] group-hover:w-full transition-all" />
@@ -30,16 +30,17 @@ export function Hero() {
                   .getElementById("lead-form")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="bg-white text-[#0A0A0A] hover:bg-[#FAFAFA] border border-[#BCAB87] rounded px-6 h-10 shadow-lg shadow-black/5 transition-all font-medium"
+              className="bg-white text-[#0A0A0A] hover:bg-[#FAFAFA] border border-[#BCAB87] rounded px-4 sm:px-6 h-9 sm:h-10 text-sm shadow-lg shadow-black/5 transition-all font-medium"
             >
-              Contact Sales
+              <span className="sm:hidden">Contact</span>
+              <span className="hidden sm:inline">Contact Sales</span>
             </Button>
           </div>
         </div>
       </nav>
 
       {/* Main Content */}
-      <div className="relative max-w-[1400px] mx-auto px-8 pt-32 pb-40">
+      <div className="relative max-w-[1400px] mx-auto px-4 sm:px-8 pt-16 sm:pt-32 pb-20 sm:pb-40">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
           <div className="relative z-10">
@@ -139,7 +140,7 @@ export function Hero() {
               />
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-[#0A0A0A] px-6 py-3 rounded-full shadow-xl border border-[#0A0A0A]/20 whitespace-nowrap">
+              <div className="hidden sm:block absolute -bottom-6 left-1/2 -translate-x-1/2 bg-[#0A0A0A] px-6 py-3 rounded-full shadow-xl border border-[#0A0A0A]/20 whitespace-nowrap">
                 <div className="text-sm text-white font-semibold">
                   ✨ Visualize Your Room in AR
                 </div>

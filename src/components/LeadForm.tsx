@@ -5,7 +5,7 @@ import { Mail, Building2, Globe, User } from "lucide-react";
 export function LeadForm() {
   return (
     <section id="lead-form" className="relative bg-[#8E8D8D] py-40">
-      <div className="relative max-w-[1400px] mx-auto px-8">
+      <div className="relative max-w-[1400px] mx-auto px-4 sm:px-8">
         <div className="max-w-[700px] mx-auto">
           {/* Header */}
           <div className="text-center mb-12">

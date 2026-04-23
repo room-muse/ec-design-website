@@ -1,42 +1,53 @@
-import { Activity, Undo2, Users, TrendingUp } from 'lucide-react';
+import { Activity, Undo2, Users, TrendingUp } from "lucide-react";
 
 const benefits = [
   {
     icon: Activity,
-    title: 'Increase conversion',
-    description: 'Customers make confident purchase decisions when they see products in context.',
-    stat: '+142%',
-    statLabel: 'avg. increase'
+    title: "Increase conversion",
+    description:
+      "Customers make confident purchase decisions when they see products in context.",
+    stat: "+142%",
+    statLabel: "avg. increase",
   },
   {
     icon: Undo2,
-    title: 'Reduce returns',
-    description: 'Realistic visualization minimizes sizing and style mismatches.',
-    stat: '-37%',
-    statLabel: 'fewer returns'
+    title: "Reduce returns",
+    description:
+      "Realistic visualization minimizes sizing and style mismatches.",
+    stat: "-37%",
+    statLabel: "fewer returns",
   },
   {
     icon: Users,
-    title: 'New distribution channel',
-    description: 'Reach customers through curated room designs and shoppable experiences.',
-    stat: '3.2M',
-    statLabel: 'monthly visitors'
+    title: "New distribution channel",
+    description:
+      "Reach customers through curated room designs and shoppable experiences.",
+    stat: "3.2M",
+    statLabel: "monthly visitors",
   },
   {
     icon: TrendingUp,
-    title: 'Measurable performance',
-    description: 'Track clicks, conversions, and engagement across your entire catalog.',
-    stat: '100%',
-    statLabel: 'visibility'
+    title: "Measurable performance",
+    description:
+      "Track clicks, conversions, and engagement across your entire catalog.",
+    stat: "100%",
+    statLabel: "visibility",
   },
 ];
 
 export function Value() {
   return (
     <section className="relative bg-[#454343] py-40">
-      <div className="max-w-[1400px] mx-auto px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-5xl text-[#FFFFFF] mb-4 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)', fontWeight: 500, letterSpacing: '-0.02em' }}>
+          <h2
+            className="text-5xl text-[#FFFFFF] mb-4 leading-[1.15]"
+            style={{
+              fontFamily: "var(--font-heading)",
+              fontWeight: 500,
+              letterSpacing: "-0.02em",
+            }}
+          >
             Why brands partner with RoomMuse
           </h2>
         </div>
@@ -65,8 +76,12 @@ export function Value() {
 
                 {/* Stat Badge - aligned to bottom */}
                 <div className="inline-flex items-baseline gap-2 px-3 py-2 bg-[#FAFAFA] border border-[#E6E6E6] rounded-md w-fit">
-                  <span className="text-lg font-semibold text-[#BCAB87]">{benefit.stat}</span>
-                  <span className="text-xs text-[#6B6B6B]">{benefit.statLabel}</span>
+                  <span className="text-lg font-semibold text-[#BCAB87]">
+                    {benefit.stat}
+                  </span>
+                  <span className="text-xs text-[#6B6B6B]">
+                    {benefit.statLabel}
+                  </span>
                 </div>
               </div>
             );
