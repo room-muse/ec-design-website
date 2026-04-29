@@ -9,6 +9,7 @@ import { LeadForm } from "./components/LeadForm";
 import { Footer } from "./components/Footer";
 import DemoAR from "./pages/DemoAR";
 import DemoModular from "./pages/DemoModular";
+import DemoVirtualGallery from "./pages/DemoVirtualGallery";
 
 function Home() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/demo/ar" element={<DemoAR />} />
         <Route path="/demo/modular" element={<DemoModular />} />
+        <Route path="/demo/virtual-gallery" element={<DemoVirtualGallery />} />
       </Routes>
     </BrowserRouter>
   );
