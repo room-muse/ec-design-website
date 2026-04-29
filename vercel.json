@@ -1,13 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/demo/virtual-gallery",
-      "destination": "https://virtual-gallery-gamma.vercel.app/"
-    },
-    {
-      "source": "/demo/virtual-gallery/:path*",
-      "destination": "https://virtual-gallery-gamma.vercel.app/:path*"
-    },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
+  }
